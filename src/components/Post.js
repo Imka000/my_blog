@@ -1,7 +1,7 @@
 import React from 'react';
 import MyButton from "./MyButton";
 
-const Posts = (props) => {
+const Post = (props) => {
     return (
         <>
             <div className="w3-card-4 w3-margin w3-white">
@@ -14,7 +14,7 @@ const Posts = (props) => {
                     <p>{props.desc}</p>
                     <div className="w3-row">
                         <div className="w3-col m8 s12">
-                            <MyButton color="w3-red" text="Read More"/>
+                            <MyButton/>
                         </div>
                         <div className="w3-col m4 w3-hide-small">
                             <p><span className="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span
@@ -28,4 +28,4 @@ const Posts = (props) => {
     );
 };
 
-export default Posts;
+export default Post;

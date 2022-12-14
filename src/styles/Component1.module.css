@@ -1,0 +1,9 @@
+.container{
+    padding: 20px 0;
+    background-color: gray;
+}
+
+.title{
+    color: red;
+    text-align: center;
+}
