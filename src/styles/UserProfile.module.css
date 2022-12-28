@@ -1,0 +1,23 @@
+.form{
+    width: 550px;
+    margin: 15px auto;
+}
+
+.form_control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form_control input, .form_control select{
+    width: 100%;
+    height: 40px;
+}
+
+.btn{
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 20px;
+    border: 0;
+}
+

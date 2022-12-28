@@ -1,5 +1,6 @@
 import React from 'react';
 import MyButton from "./MyButton";
+import posts from "../data/posts";
 
 const Post = (props) => {
     return (

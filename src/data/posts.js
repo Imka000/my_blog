@@ -1,3 +1,5 @@
+import React from "react";
+
 const posts = [
     {
         img_url: "https://www.w3schools.com/w3images/woods.jpg",

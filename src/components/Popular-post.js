@@ -1,4 +1,5 @@
 import React from 'react';
+import popular_posts from "../data/popular_posts";
 
 const Item_posts = (props) => {
     return (
@@ -13,6 +14,17 @@ const Item_posts = (props) => {
 };
 
 const PopularPost = () => {
+    const items =  popular_posts.map((item,index) => {
+        return (
+            <Item_posts
+                key={index}
+                img={item.img}
+                title={item.title}
+                title_desc={item.title_desc}
+            />
+        )
+    })
+
     return (
         <>
             <div className="w3-card w3-margin">
@@ -20,26 +32,7 @@ const PopularPost = () => {
                     <h4>Popular Posts</h4>
                 </div>
                 <ul className="w3-ul w3-hoverable w3-white">
-                    <Item_posts
-                        img="https://www.w3schools.com/w3images/workshop.jpg"
-                        title="Lorem"
-                        title_desc="Sed mattis nunc"
-                    />
-                    <Item_posts
-                        img="https://www.w3schools.com/w3images/gondol.jpg"
-                        title="Ipsum"
-                        title_desc="Praes tinci sed"
-                    />
-                    <Item_posts
-                        img="https://www.w3schools.com/w3images/skies.jpg"
-                        title="Dorum"
-                        title_desc="Ultricies congue"
-                    />
-                    <Item_posts
-                        img="https://www.w3schools.com/w3images/rock.jpg"
-                        title="Mingsum"
-                        title_desc="Lorem ipsum dipsum"
-                    />
+                    {items}
                 </ul>
             </div>
             <hr/>
